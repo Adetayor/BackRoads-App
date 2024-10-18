@@ -1,72 +1,21 @@
 // import logo from './logo.svg';
 // import './App.css';
 
+import Footer from "./Components/Footer";
+import Hero from "./Components/Hero";
+import Navbar from "./Components/Navbar";
+import New from "./Components/Navbar";
+
 function App() {
-  return (
+  return ( 
   <>
-    <nav className="navbar">
-      <div className="nav-center">
-        <div className="nav-header">
-          <img src="./images/logo.svg" className="nav-logo" alt="backroads" />
-          <button type="button" className="nav-toggle" id="nav-toggle">
-            <i className="fas fa-bars"></i>
-          </button>
-        </div>
-        {/* <!-- left this comment on purpose --> */}
-        <ul className="nav-links" id="nav-links">
-          <li>
-            <a href="#home" className="nav-link"> home </a>
-          </li>
-
-          <li>
-            <a href="#about" className="nav-link"> about </a>
-          </li>
-
-          <li>
-            <a href="#services" className="nav-link"> services </a>
-          </li>
-
-          <li>
-            <a href="#tours" className="nav-link"> tours</a>
-          </li>
-        </ul>
-
-        <ul className="nav-icons">
-          <li>
-            <a href="https://www.twitter.com" target="_blank" className="nav-icon"
-              ><i className="fab fa-facebook"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://www.twitter.com" target="_blank" className="nav-icon"
-              ><i className="fab fa-twitter"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://www.twitter.com" target="_blank" className="nav-icon"
-              ><i className="fab fa-squarespace"></i
-            ></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <section className="hero" id="home">
-      <div className="hero-banner">
-        <h1>continue exploring</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-          explicabo debitis est autem dicta.
-        </p>
-        <a href="#tours" className="btn hero-btn">explore tours</a>
-      </div>
-    </section>
-
+    <Navbar/>
+    <Hero/>  
     <section className="section" id="about">
       <div className="section-title">
         <h2>about <span>us</span></h2>
       </div>
-
+  
       <div className="section-center about-center">
         <div className="about-img">
           <img
@@ -91,8 +40,8 @@ function App() {
         </article>
       </div>
     </section>
-
-    <section className="section services" id="services">
+    
+  <section className="section services" id="services">
       <div className="section-title">
         <h2>our <span>services</span></h2>
       </div>
@@ -131,7 +80,7 @@ function App() {
         </article>
       </div>
     </section>
-
+    
     <section className="section" id="tours">
       <div className="section-title">
         <h2>featured <span>tours</span></h2>
@@ -229,46 +178,9 @@ function App() {
         </article>
       </div>
     </section>
-
-    <footer className="section footer">
-      <ul className="footer-links">
-        <li>
-          <a href="#home" className="footer-link">home</a>
-        </li>
-        <li>
-          <a href="#about" className="footer-link">about</a>
-        </li>
-        <li>
-          <a href="#services" className="footer-link">services</a>
-        </li>
-        <li>
-          <a href="#featured" className="footer-link">featured</a>
-        </li>
-      </ul>
-      <ul className="footer-icons">
-        <li>
-          <a href="https://www.twitter.com" target="_blank" className="footer-icon"
-            ><i className="fab fa-facebook"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://www.twitter.com" target="_blank" className="footer-icon"
-            ><i className="fab fa-twitter"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://www.twitter.com" target="_blank" className="footer-icon"
-            ><i className="fab fa-squarespace"></i
-          ></a>
-        </li>
-      </ul>
-      <p className="copyright">
-        copyright &copy; Backroads travel tours company
-        <span id="date"></span> all rights reserved
-      </p>
-    </footer>
+    <Footer/>   
   </>
   );
-}
+};
 
 export default App;
